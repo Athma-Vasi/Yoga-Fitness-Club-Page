@@ -19,8 +19,8 @@ export default function Link({
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
       className={`${
-        selectedPage === lowerCasePage ? "text-tertiary-500" : "text-gray-100"
-      } transition duration-150 hover:text-tertiary-300`}
+        selectedPage === lowerCasePage ? "text-tertiary-700" : "text-gray-100"
+      } transition duration-150 hover:text-tertiary-500`}
     >
       {page}
     </AnchorLink>

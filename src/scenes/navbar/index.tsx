@@ -1,4 +1,5 @@
 import useResponsiveWidth from "@/hooks/useResponsiveWidth";
+import MainButton from "@/shared/MainButton";
 import { SelectedPages } from "@/types";
 import { useState } from "react";
 import { FaBars, FaDharmachakra } from "react-icons/fa";
@@ -16,7 +17,7 @@ function Navbar({ selectedPage, setSelectedPage }: NavbarProps) {
 
   return (
     <nav>
-      <div className="fixed top-0 z-50 flex w-full items-center justify-between py-6">
+      <div className="fixed top-0 z-30 flex w-full items-center justify-between py-6">
         <div className="mx-auto flex w-5/6 items-center justify-between">
           <div className="flex w-full items-center justify-between">
             <div className="flex w-full items-center justify-between gap-16">
@@ -81,6 +82,47 @@ function Navbar({ selectedPage, setSelectedPage }: NavbarProps) {
           </div>
         </div>
       </div>
+
+      {/* modal for mobile menu click */}
+      {!isWidthAboveMedScreens && isMenuToggled && (
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[382px] bg-primary-300 drop-shadow-xl">
+          {/* modal menu close icon */}
+          <div className="flex justify-end p-11">
+            <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+              <HiXMark className="h-6 w-6 text-gray-50 hover:text-tertiary-300" />
+            </button>
+          </div>
+
+          {/* modal menu links */}
+          <div className="ml-[30.9%] mr-[30.9%] flex flex-col gap-9 text-2xl">
+            <Link
+              page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Philosophy"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Our Classes"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Massages"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Contact Us"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

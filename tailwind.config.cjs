@@ -14,13 +14,20 @@ module.exports = {
         "gray-100": "#333333",
         "gray-500": "#191919",
         "primary-100": "#E6E6FA", // lavender
-        "primary-300": "#D6D6F0",
-        "primary-500": "#C6C6E6",
-        "secondary-400": "#B0E0E6", // powder blue
-        "secondary-500": "#A0D6D6",
+        "primary-300": "#C6C6E6",
+        "primary-500": "#A6A6D2",
+        "primary-700": "#8686BE",
+        "primary-900": "#6666AA",
+        "secondary-100": "#B0E0E6", // powder blue
+        "secondary-300": "#90CCCC", // powder blue
+        "secondary-500": "#70B8B8",
+        "secondary-700": "#509494",
+        "secondary-900": "#307E7E",
         "tertiary-100": "#FFB6C1", // pale pink
         "tertiary-300": "#FFA0B3",
         "tertiary-500": "#FF8CA5",
+        "tertiary-700": "#FF3765",
+        "tertiary-900": "#FF0B39",
       },
       backgroundImage: (theme) => ({
         "gradient-lavenderBlue":
