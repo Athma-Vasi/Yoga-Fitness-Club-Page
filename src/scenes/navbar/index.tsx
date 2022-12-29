@@ -9,15 +9,20 @@ import Link from "./Link";
 type NavbarProps = {
   selectedPage: SelectedPages;
   setSelectedPage: (page: SelectedPages) => void;
+  isPageAtTop: boolean;
 };
 
-function Navbar({ selectedPage, setSelectedPage }: NavbarProps) {
+function Navbar({ selectedPage, setSelectedPage, isPageAtTop }: NavbarProps) {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isWidthAboveMedScreens = useResponsiveWidth("(min-width: 1060px)");
 
   return (
     <nav>
-      <div className="fixed top-0 z-30 flex w-full items-center justify-between py-6">
+      <div
+        className={`${
+          isPageAtTop ? "" : "bg-secondary-100 drop-shadow"
+        } fixed top-0 z-30 flex w-full items-center justify-between py-6`}
+      >
         <div className="mx-auto flex w-5/6 items-center justify-between">
           <div className="flex w-full items-center justify-between">
             <div className="flex w-full items-center justify-between gap-16">
