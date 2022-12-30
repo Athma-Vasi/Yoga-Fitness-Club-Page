@@ -2,6 +2,7 @@ import Navbar from "@/scenes/navbar";
 import { useState, useEffect } from "react";
 import Home from "./scenes/home";
 import { SelectedPages } from "./types";
+import Philosophy from "@/scenes/philosophy";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPages>("home");
@@ -22,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-primary-100">
+    <div className="app bg-tertiary-25">
       <Navbar
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
@@ -30,6 +31,7 @@ function App() {
       />
 
       <Home setSelectedPage={setSelectedPage} />
+      <Philosophy setSelectedPage={setSelectedPage} />
     </div>
   );
 }

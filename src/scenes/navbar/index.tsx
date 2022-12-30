@@ -24,11 +24,11 @@ function Navbar({ selectedPage, setSelectedPage, isPageAtTop }: NavbarProps) {
         } fixed top-0 z-30 flex w-full items-center justify-between py-6`}
       >
         <div className="mx-auto flex w-5/6 items-center justify-between">
-          <div className="flex w-full items-center justify-between">
+          <div className="flex w-full items-center justify-between ">
             <div className="flex w-full items-center justify-between gap-16">
               {/* logo - left side*/}
               <div className="flex items-center justify-between">
-                <h1 className="px-5 font-montserrat text-2xl text-gray-100">
+                <h1 className="mr-5 font-montserrat text-2xl text-gray-100">
                   Yoga Ashram
                 </h1>
                 <FaDharmachakra className="scale-150 transform text-gray-100" />
@@ -37,7 +37,7 @@ function Navbar({ selectedPage, setSelectedPage, isPageAtTop }: NavbarProps) {
               {isWidthAboveMedScreens ? (
                 <div className="flex w-4/6 items-center justify-between">
                   {/* nav links */}
-                  <div className="flex items-center justify-between gap-7 text-sm">
+                  <div className="flex items-center justify-between gap-7 text-base">
                     <Link
                       page="Home"
                       selectedPage={selectedPage}

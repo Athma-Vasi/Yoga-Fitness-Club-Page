@@ -13,6 +13,8 @@ module.exports = {
         "gray-70": "#4D4D4D",
         "gray-100": "#333333",
         "gray-500": "#191919",
+        "primary-25": "#F8F8FF", // lavender
+        "primary-50": "#F0F0FF", // lavender
         "primary-100": "#E6E6FA", // lavender
         "primary-300": "#C6C6E6",
         "primary-500": "#A6A6D2",
@@ -23,6 +25,8 @@ module.exports = {
         "secondary-500": "#70B8B8",
         "secondary-700": "#509494",
         "secondary-900": "#307E7E",
+        "tertiary-25": "#FFE6E6", // pale pink
+        "tertiary-50": "#FFD9D9", // pale pink
         "tertiary-100": "#FFB6C1", // pale pink
         "tertiary-300": "#FFA0B3",
         "tertiary-500": "#FF8CA5",
