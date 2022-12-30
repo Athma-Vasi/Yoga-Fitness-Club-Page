@@ -1,5 +1,6 @@
 import Navbar from "@/scenes/navbar";
 import { useState, useEffect } from "react";
+import Home from "./scenes/home";
 import { SelectedPages } from "./types";
 
 function App() {
@@ -10,11 +11,9 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsPageAtTop(true);
-        console.log("setIsPageAtTop: ", setIsPageAtTop);
         setSelectedPage("home");
       } else {
         setIsPageAtTop(false);
-        console.log("setIsPageAtTop: ", setIsPageAtTop);
       }
     };
 
@@ -29,6 +28,8 @@ function App() {
         setSelectedPage={setSelectedPage}
         isPageAtTop={isPageAtTop}
       />
+
+      <Home setSelectedPage={setSelectedPage} />
     </div>
   );
 }
