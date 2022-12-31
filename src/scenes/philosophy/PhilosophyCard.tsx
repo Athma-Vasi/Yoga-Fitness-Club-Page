@@ -21,7 +21,7 @@ function PhilosophyCard({
 }: PhilosophyCardProps) {
   return (
     <div
-      className="mt-5 rounded-md border-2 border-gray-300 bg-tertiary-25 px-5 py-16 text-center xs:basis-3/5 sm:basis-3/5 md:h-[800px] md:basis-3/5"
+      className="mt-5 basis-3/5 rounded-md border-2 border-gray-300 px-10 py-16 text-center md:h-[800px]"
       key={key}
     >
       <div className="mb-4 flex justify-center">{image}</div>

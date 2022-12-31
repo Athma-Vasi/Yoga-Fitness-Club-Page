@@ -7,7 +7,9 @@ import womenLaughingStretching from "@/assets/women-laughing-stretching.png";
 import yogaStretching from "@/assets/yoga-stretching.png";
 import threeWomenPose from "@/assets/three-women-pose.png";
 import twoWomenLaughing from "@/assets/yoga-two-women-laughing.png";
+import pranaYogaPose from "@/assets/prana-yoga-pose.png";
 import PhilosophyCard from "./PhilosophyCard";
+import MainButton from "@/shared/MainButton";
 
 const philosophyCards: PhilosphyCardType[] = [
   {
@@ -72,14 +74,14 @@ function Philosophy({ setSelectedPage }: PhilosophyProps) {
   return (
     <section
       id="Philosophy"
-      className="mx-auto min-h-full w-full bg-white py-20"
+      className="mx-auto min-h-full w-full bg-tertiary-25 py-20"
     >
       <motion.div
         onViewportEnter={() => setSelectedPage("philosophy")}
-        className="outline-double xs:mx-auto xs:w-5/6"
+        className="xs:mx-auto xs:w-5/6"
       >
         <motion.div
-          className="outline-dotted md:my-5 md:w-full md:flex-row"
+          className="md:my-5 md:w-full md:flex-row"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.6 }}
@@ -105,11 +107,14 @@ function Philosophy({ setSelectedPage }: PhilosophyProps) {
         </motion.div>
 
         {/* philosophy */}
-        <div className="mt-6 items-center justify-between gap-8  xs:flex-col sm:flex md:flex-row">
-          <div className="">
-            <h3 className="mt-20 font-montserrat text-2xl font-bold text-gray-100">
-              Our Philosophy
-            </h3>
+        <div
+          // className="mt-6 items-center justify-between gap-8  xs:flex-col sm:flex md:flex-row"
+          className="mt-6 flex flex-col"
+        >
+          <h3 className="mt-20 font-montserrat text-2xl font-bold text-gray-100">
+            Our Philosophy
+          </h3>
+          <div className="w-full sm:grid sm:grid-cols-2 sm:gap-10 md:grid md:grid-cols-4 md:gap-10">
             {philosophyCards.map((philosophyCard) => (
               <PhilosophyCard
                 key={philosophyCard.title}
@@ -122,6 +127,61 @@ function Philosophy({ setSelectedPage }: PhilosophyProps) {
             ))}
           </div>
         </div>
+        {/* image and description */}
+        <motion.div
+          className="md: grid w-full gap-10 md:grid-cols-2"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 0.618 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          {/* image */}
+          <img
+            src={pranaYogaPose}
+            alt="women in meditation"
+            className="mx-auto my-10 rounded-lg"
+          />
+
+          {/* description */}
+          <motion.div
+            className="my-auto"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.6 }}
+            transition={{ delay: 0.2, duration: 0.618 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            {/* title */}
+            <h2 className="font-montserrat text-2xl font-bold text-gray-100">
+              Connection of Mind, Body, and Soul
+            </h2>
+
+            {/* description */}
+            <p className="mt-6 text-gray-100">
+              Yoga offers so many benefits to your health and overall life.
+              Located in the heart of Flowing Wells, AZ, we are here to provide
+              you with safe and experienced instruction. Whether you are just
+              beginning your practice or are a seasoned yogi, we have just what
+              you need. Drop-ins welcome, mats and props are available to use,
+              easy parking and beautiful mountain views that encourage a
+              tranquil and grounding experience.
+            </p>
+
+            {/* button */}
+            <div className="mt-10">
+              <MainButton setSelectedPage={setSelectedPage}>
+                Join now
+              </MainButton>
+            </div>
+          </motion.div>
+        </motion.div>
       </motion.div>
     </section>
   );
