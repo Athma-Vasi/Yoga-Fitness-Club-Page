@@ -1,9 +1,4 @@
-export type SelectedPages =
-  | "home"
-  | "philosophy"
-  | "ourclasses"
-  | "massages"
-  | "contactus";
+export type SelectedPages = "home" | "philosophy" | "ourclasses" | "contactus";
 
 export type PhilosphyCardType = {
   image: JSX.Element;

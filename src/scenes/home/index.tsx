@@ -19,7 +19,7 @@ function Home({ setSelectedPage }: HomeProps) {
   return (
     <section
       id="home"
-      className="gap-14 bg-tertiary-25 py-10 outline-dashed md:h-full md:pb-0"
+      className="gap-14 bg-tertiary-25 py-10 md:h-full md:pb-0"
     >
       {/* main header and image */}
       <motion.div

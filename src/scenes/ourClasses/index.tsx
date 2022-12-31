@@ -59,7 +59,7 @@ type OurClassesProps = { setSelectedPage: (page: SelectedPages) => void };
 
 function OurClasses({ setSelectedPage }: OurClassesProps) {
   return (
-    <section className="w-full bg-tertiary-25 py-20" id="ourClasses">
+    <section className="w-full bg-tertiary-25 py-10" id="ourClasses">
       <motion.div onViewportEnter={() => setSelectedPage("ourclasses")}>
         <motion.div
           className="mx-auto w-5/6 "
@@ -90,7 +90,7 @@ function OurClasses({ setSelectedPage }: OurClassesProps) {
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[350px] w-full overflow-x-auto overflow-y-hidden">
+        <div className="mx-auto mt-10 h-[350px] w-5/6 overflow-x-auto overflow-y-hidden">
           {/* overflow happens: child container has a bigger width than parent container which is full width */}
           <ul className="w-[2800px] whitespace-nowrap">
             {classes.map((item, idx) => (

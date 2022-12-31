@@ -1,4 +1,6 @@
-type BannerTextProps = { children: string };
+import React from "react";
+
+type BannerTextProps = { children: string | React.ReactNode };
 
 function BannerText({ children }: BannerTextProps) {
   return (

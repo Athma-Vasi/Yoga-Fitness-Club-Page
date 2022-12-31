@@ -1,7 +1,6 @@
 import BannerText from "@/shared/BannerText";
 import { PhilosphyCardType, SelectedPages } from "@/types";
 import { motion } from "framer-motion";
-import { HiHomeModern, HiUserGroup, HiAcademicCap } from "react-icons/hi2";
 import stretchingFocused from "@/assets/woman-stretching-focused.png";
 import womenLaughingStretching from "@/assets/women-laughing-stretching.png";
 import yogaStretching from "@/assets/yoga-stretching.png";

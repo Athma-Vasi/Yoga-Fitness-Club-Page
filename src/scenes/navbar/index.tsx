@@ -54,11 +54,6 @@ function Navbar({ selectedPage, setSelectedPage, isPageAtTop }: NavbarProps) {
                       setSelectedPage={setSelectedPage}
                     />
                     <Link
-                      page="Massages"
-                      selectedPage={selectedPage}
-                      setSelectedPage={setSelectedPage}
-                    />
-                    <Link
                       page="Contact Us"
                       selectedPage={selectedPage}
                       setSelectedPage={setSelectedPage}
@@ -112,11 +107,6 @@ function Navbar({ selectedPage, setSelectedPage, isPageAtTop }: NavbarProps) {
             />
             <Link
               page="Our Classes"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Massages"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
