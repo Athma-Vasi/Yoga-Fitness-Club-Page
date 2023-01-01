@@ -20,7 +20,15 @@ function PhilosophyCard({
   setSelectedPage,
 }: PhilosophyCardProps) {
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.618 }}
+      transition={{ duration: 0.618 }}
+      variants={{
+        hidden: { opacity: 0, x: Math.random() >= 0.5 ? -75 : 75 },
+        visible: { opacity: 1, x: 0 },
+      }}
       className="mt-5 basis-3/5 rounded-md border-2 border-gray-300 px-10 py-16 text-center md:h-[800px]"
       key={key}
     >
@@ -35,7 +43,7 @@ function PhilosophyCard({
       >
         <p>Learn more</p>
       </AnchorLink>
-    </div>
+    </motion.div>
   );
 }
 
