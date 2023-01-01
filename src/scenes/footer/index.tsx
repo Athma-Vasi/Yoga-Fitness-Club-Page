@@ -14,7 +14,7 @@ function Footer({ setSelectedPage }: FooterProps) {
             <h1 className="mr-5 font-montserrat text-2xl text-gray-100 ">
               Yoga Ashram
             </h1>
-            <FaDharmachakra className="scale-150 transform text-gray-100" />
+            <FaDharmachakra className="scale-150 transform text-secondary-700" />
           </div>
           <p className="pt-8">
             Beginners build a solid foundation from our systematic and safe

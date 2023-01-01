@@ -31,7 +31,7 @@ function Navbar({ selectedPage, setSelectedPage, isPageAtTop }: NavbarProps) {
                 <h1 className="mr-5 font-montserrat text-2xl text-gray-100">
                   Yoga Ashram
                 </h1>
-                <FaDharmachakra className="scale-150 transform text-gray-100" />
+                <FaDharmachakra className="scale-150 transform text-secondary-700" />
               </div>
               {/* menu - right side */}
               {isWidthAboveMedScreens ? (
