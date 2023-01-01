@@ -25,8 +25,14 @@ function ContactUs({ setSelectedPage }: ContactUsProps) {
   }
 
   return (
-    <section id="contactus" className="mx-auto w-5/6 pt-16 pb-24">
-      <motion.div onViewportEnter={() => setSelectedPage("contactus")}>
+    <section
+      id="contactus"
+      className="mx-auto w-full bg-tertiary-25 pt-16 pb-24"
+    >
+      <motion.div
+        className="mx-auto w-5/6  "
+        onViewportEnter={() => setSelectedPage("contactus")}
+      >
         <motion.div
           className="md:w-3/5"
           initial="hidden"
@@ -45,9 +51,9 @@ function ContactUs({ setSelectedPage }: ContactUsProps) {
           <p className="my-3">Questions? We would love to hear from you!</p>
         </motion.div>
         {/* form */}
-        <div className="mt-6 justify-between gap-8 md:grid md:grid-cols-2">
+        <div className="mt-6 justify-between gap-8  md:grid md:grid-cols-2">
           <motion.div
-            className="md:t-0 basis-3/5"
+            className="md:t-0 basis-3/5  md:my-auto"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.618 }}

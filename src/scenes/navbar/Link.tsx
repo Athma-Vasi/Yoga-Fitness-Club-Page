@@ -12,7 +12,7 @@ export default function Link({
   selectedPage,
   setSelectedPage,
 }: LinkProps) {
-  const lowerCasePage = page.toLowerCase().split(" ").join("") as SelectedPages;
+  const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPages;
 
   return (
     <AnchorLink
