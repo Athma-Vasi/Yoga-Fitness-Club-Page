@@ -72,7 +72,7 @@ type PhilosophyProps = {
 function Philosophy({ setSelectedPage }: PhilosophyProps) {
   return (
     <section
-      id="Philosophy"
+      id="philosophy"
       className="mx-auto min-h-full w-full bg-tertiary-25 py-20"
     >
       <motion.div

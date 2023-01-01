@@ -7,13 +7,11 @@ type FooterProps = { setSelectedPage: (page: SelectedPages) => void };
 function Footer({ setSelectedPage }: FooterProps) {
   return (
     <footer className="w-full bg-tertiary-25 py-14 text-gray-100">
-      <hr className="mx-auto mb-10 h-1 w-3/5 bg-gray-400" />
-
       {/* grid cols div */}
       <div className="mx-auto my-auto w-5/6 gap-10 xs:flex xs:flex-col sm:grid sm:grid-cols-2 md:grid md:grid-cols-3">
         <div className="mx-auto sm:col-span-2 md:col-span-1">
-          <div className="mx-auto flex items-center justify-start ">
-            <h1 className="mr-5 font-montserrat text-2xl text-gray-100">
+          <div className="mx-auto flex items-center justify-start">
+            <h1 className="mr-5 font-montserrat text-2xl text-gray-100 ">
               Yoga Ashram
             </h1>
             <FaDharmachakra className="scale-150 transform text-gray-100" />
@@ -31,8 +29,8 @@ function Footer({ setSelectedPage }: FooterProps) {
         <div className="mx-auto flex-col items-center justify-center xs:ml-0 sm:col-span-1 sm:mx-auto md:col-span-1">
           <h5 className="mt-10 font-bold">Contacts</h5>
           <p className="mt-5">29 NW Old Valley</p>
-          <p className="my-2">Flowing Wells, AZ</p>
-          <p className="my-2">+ (123) 1-800-555-5555</p>
+          <p className="my-2 mb-4">Flowing Wells, AZ</p>
+          <p className="my-2 mb-4">+ (123) 1-800-555-5555</p>
           <p className="my-2">Every day: 08:00 - 22:00</p>
           <p className="my-2">Sat - Sun: 06:00 - 21:00</p>
         </div>

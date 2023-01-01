@@ -59,7 +59,7 @@ type OurClassesProps = { setSelectedPage: (page: SelectedPages) => void };
 
 function OurClasses({ setSelectedPage }: OurClassesProps) {
   return (
-    <section className="w-full bg-tertiary-25 py-10" id="ourClasses">
+    <section className="w-full bg-tertiary-25 py-10" id="ourclasses">
       <motion.div onViewportEnter={() => setSelectedPage("ourclasses")}>
         <motion.div
           className="mx-auto w-5/6 "
@@ -72,9 +72,9 @@ function OurClasses({ setSelectedPage }: OurClassesProps) {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="md:w-3/5">
+          <div className=" w-full">
             <BannerText>Private Classes</BannerText>
-            <p className="py-5">
+            <p className="py-5 ">
               With a particular focus on private and semi-private classes and
               holistic health coaching, our clients can be sure they are
               investing in a high-quality, transformative mindbody experience
