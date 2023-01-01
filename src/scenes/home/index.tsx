@@ -43,8 +43,30 @@ function Home({ setSelectedPage }: HomeProps) {
               <div className=" text-gray-100">
                 {/* home page banner text */}
                 <h2 className="mb-6 font-montserrat text-5xl">Yoga Ashram</h2>
-                <h3 className="text-2xl">Mindful Meditation</h3>
-                <h3 className="text-2xl">Spiritual Awakening</h3>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.618 }}
+                  transition={{ duration: 0.618 }}
+                  variants={{
+                    hidden: { opacity: 0, x: -75 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
+                  <h3 className="text-2xl">Mindful Meditation</h3>
+                </motion.div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.618 }}
+                  transition={{ duration: 0.618 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 75 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
+                  <h3 className="text-2xl">Spiritual Awakening</h3>
+                </motion.div>
               </div>
             </div>
             <p className="mt-6 text-base text-gray-100 md:text-start">
