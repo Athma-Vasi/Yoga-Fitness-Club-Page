@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-tertiary-25">
+    <div className="app  bg-tertiary-25">
       <Navbar
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}

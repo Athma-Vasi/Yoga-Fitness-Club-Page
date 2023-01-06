@@ -110,8 +110,8 @@ function Home({ setSelectedPage }: HomeProps) {
       </motion.div>
       {/* sustainable brands */}
       {isWidthAboveMedScreens && (
-        <div className="h-[200px] w-full bg-tertiary-50 py-10">
-          <div className="mx-auto w-5/6">
+        <div className="h-[200px] w-full py-4">
+          <div className=" mx-auto h-full w-5/6  pt-10">
             <div className="flex w-5/6 items-center justify-between gap-6 font-montserrat text-xl font-bold ">
               Our Sponsors
               <img

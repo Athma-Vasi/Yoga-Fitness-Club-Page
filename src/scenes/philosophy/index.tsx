@@ -73,7 +73,7 @@ function Philosophy({ setSelectedPage }: PhilosophyProps) {
   return (
     <section
       id="philosophy"
-      className="mx-auto min-h-full w-full bg-tertiary-25 py-20"
+      className="mx-auto mt-8 min-h-full w-full  bg-tertiary-25 py-20"
     >
       <motion.div
         onViewportEnter={() => setSelectedPage("philosophy")}
@@ -108,7 +108,7 @@ function Philosophy({ setSelectedPage }: PhilosophyProps) {
         {/* philosophy */}
         <div
           // className="mt-6 items-center justify-between gap-8  xs:flex-col sm:flex md:flex-row"
-          className="mt-6 flex flex-col"
+          className="mt-20 flex flex-col"
         >
           <h3 className="mt-20 font-montserrat text-2xl font-bold text-gray-100">
             Our Philosophy
